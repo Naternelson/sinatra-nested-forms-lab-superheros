@@ -1,3 +1,32 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
 
+<body>
+    <div class="container">
+        <h1 class="center-align"><%=@team.name%></h1>
+        <h2 class="center-align">Team Motto: <%=@team.motto%></h2>
+        <hr>
+        
+        
+        <ul class="collection">
+            <% @heros.each do |hero| %>
+            <li class="collection-item">
+                <span class="title">Hero Name: <%= hero.name %> </span>
+                <p>Hero Power: <%= hero.power %> </p>
+                <p>Hero Biography: <%= hero.biography %> </p>
+            </li>
+            <% end %>
+        </ul>
+        
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
 
 

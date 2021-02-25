@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Teams and Heros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center-align">Create a Team and Heroes!</h1>
+        <hr>
+        <div class="row">
+            <form class="col s12" action="/teams" method="POST">
+                
+                <h2 class="center-align">Team</h2>
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[name]" id="team_name">
+                        <label for="team_name">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[motto]" id="team_motto">
+                        <label for="team_motto">Motto</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <h2 class="center-align col s12">Hero 1</h2>
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][name]" id="member1_name">
+                        <label for="member1_name">Name</label>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][power]" id="member1_power">
+                        <label for="member1_power">Power</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][bio]" id="member1_bio">
+                        <label for="member1_bio">Biography</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <h2 class="center-align col s12">Hero 2</h2>
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][name]" id="member2_name">
+                        <label for="member2_name">Name</label>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][power]" id="member2_power">
+                        <label for="member2_power">Power</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][bio]" id="member2_bio">
+                        <label for="member2_bio">Biography</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="center-align col s12">Hero 3</h2>
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][name]" id="member3_name">
+                        <label for="member3_name">Name</label>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][power]" id="member3_power">
+                        <label for="member3_power">Power</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input type="text" name="team[members][][bio]" id="member3_bio">
+                        <label for="member3_bio">Biography</label>
+                    </div>
+                </div>
+                <div class="row"><div class="col s12"><div class="center-align"><button class="btn waves-effect waves-light" type="submit" name="submit" value="submit">submit</button></div></div></div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
